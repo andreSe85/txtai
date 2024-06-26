@@ -1,0 +1,920 @@
+ ahí está, ahí estamos grabando. Bueno gente bienvenido, buena semana, nueva semana, recién
+ estábamos charlando de qué vamos a ver a partir de ahora. Bueno les cuento primero
+ que nada que permítanme hacer un notepad acá, por qué no me lo haces, ahí. Bien
+ edit ahora lo revisamos.
+ Con lo que vamos a ver de acá hasta que termine el curso.
+ Quiero ver lo que me dijiste vos edit.
+ Si lo puedo ver.
+ Si está medio raro, es como que se te fue.
+ Tenés esta parte y tenés una pestaña que dice grupos
+ pero no tenés todo lo demás. Después lo vemos porque no sé qué opción será
+ pero si está raro, hay una configuración ahí seguramente que habrás
+ cambiado de cómo se dibujan las carpetas pero bueno después lo vemos
+ porque yo también tengo que ver cómo se hace, no sé cómo es que llegas a ese punto tampoco.
+ Así que bueno después lo bajamos bien. Les estaba diciendo, perdón,
+ ahí tengo abierto el chat GPT, después les voy a contar por qué.
+ Pero bueno básicamente entramos en la segunda etapa del curso de este curso de full stack.
+ Bien, estamos haciendo un freno y estamos yendo como 10 pasos para atrás para
+ recordar un poco dónde empezamos. Todo esto tiene sentido porque estamos
+ haciendo un curso de full stack. Full stack es a lo que se le suele llamar
+ la combinación de front-end más back-end. Que en principio son tecnologías distintas
+ que no tienen del todo que ver, tampoco son tan distintas, no son el agua y el aceite,
+ pero cada una tiene sus propias incumbencias. Esto también me viene bien si hacemos un graficito
+ donde ya sabemos un poquito de la historia, tenemos nuestra computadorita que representa
+ un cliente y tenemos del otro lado algo llamado servidor y aparece una cosa nueva que en realidad
+ ya había aparecido en su momento, pero que ahora nos importa especialmente. Que es este
+ dibujito que está acá que ahora vamos a ponerle nombre. Espero que como esto les da a entender
+ tal vez o no es la parte de base de datos. Entonces esto es un poco así. Nosotros tenemos
+ dos universos justamente. Tenemos uno que ya tenemos aprendido y dominado. Ahora falta que
+ ustedes entrenen el tp, pero realmente lo que teníamos como curso para aprender de front-end
+ ya fue cubierto. Acá vamos a escribir acá back-end.
+ Esto que está en naranjita y en verde.
+ Perdón front-end. Justamente tenemos dos universos que fíjense que los separa a propósito. En el
+ medio ven que hay una nubecita que es una división física en muchos casos, es literal, que justamente
+ lo que hace es independizar estos dos sistemas porque realmente son sistemas independientes. Uno
+ se comunica con el otro, pero son dos sistemas separados. Son dos, si quieren pensarlo de una
+ forma, dos subsistemas. Todo lo que tiene que ver con front-end y todo lo que tiene que ver
+ con back-end. Nosotros en front-end ya cubrimos el temario. Empezamos con html, seguimos con css,
+ después vimos javascript y bueno, vimos hasta ahí. Vimos un poquito de boost trap
+ y en el futuro uno podría empezar a aprender algún motor un poco más avanzado. Por ejemplo,
+ lo que estaban preguntando al principio de la clase, podríamos ver algún view que no lo vamos
+ a ver. Repito esto gente que yo lo he preguntado dos veces, un par de veces, no vamos a ver esto
+ que estoy mencionando, es para que ustedes tengan un poco de contexto. React, Angular,
+ hay varios. Estos son los tres más conocidos. Nosotros vimos los primeros cuatro y boost
+ trap lo vimos con una introducción. Esto que pasa una pagada hoy en día, que decimos, ah bueno,
+ sí, tres tecnologías nos llevó, ¿qué habrán sido? ¿Mes y medio? No me acuerdo exactamente
+ cuando arrancamos. Pónganle dos meses de curso, es un montón junto con boost trap ahí, una pequeña
+ introducción. Entonces, lo que pasa es que uno cuando lo ve de lejos dice, ah bueno, al final
+ tampoco era tanto, ¿no? O sí, ustedes me dirán. Pero en definitiva, todo lo que tiene que ver con
+ frontend son tecnologías propias de lo que tiene que ver con el renderizado, con la interfaz que
+ el usuario ve. Cuando nosotros trabajamos en frontend nos importa especialmente la conexión
+ directa con el usuario, ¿bien? Por eso es que hay una separación física. Idealmente,
+ si yo tengo un sitio ya subido a un servidor real, digamos, como ustedes vienen trabajando con Netlify
+ o GitHub Pages, eso ya está subido, ya está publicado y la gente, cualquier persona, puede acceder a su
+ sitio web. Entonces, lo que ocurre en el frontend está ajusteado en un servidor, pero a nosotros nos
+ importa solamente el acceso del cliente a la interfaz gráfica, ¿bien? Que es una interfaz web
+ que desarrollamos en estos términos. En estos cuatro principalmente y si quisiéramos en el futuro,
+ estos podrían ser la respuesta. ¿Por qué? Uno se podría preguntar, bueno, ¿para qué quiero estos
+ que están acá abajo? Si bien no los vamos a ver. ¿Para qué los quiero? Bueno, la verdad, tal vez
+ notaron o estarán notando si están haciendo sus TPS que la parte de JavaScript, la parte de renderizado
+ dinámico viene de lo que hicimos con el fetch y de cargar las pastillas con los usuarios a medida
+ que apretamos los botones. Bueno, para cosas simples eso funciona bien. Cuando empieza a crecer en
+ complejidad lo que queremos lograr, por ejemplo queremos mantener el estado de cierta información
+ a lo largo de varias páginas o queremos, por ejemplo, evitar duplicar contenido y queremos hacer
+ lo que se genere de forma dinámica. Bueno, empiezan a aparecer un montón de conceptos que son más
+ difíciles de abordar porque justamente requieren una estructura subsyacente para poder funcionar.
+ Nosotros vimos una cosa muy básica cuando empezamos. Esto que tengo acá, el último ejemplo que hicimos,
+ ¿se acuerdan? El de... ¿dónde está? Acá, ejemplo API DOM. ¿Este se acuerdan que fue el último que
+ hicimos? Que fue el que le dio... ahora ya lo sabemos, fue el que le dio el cierre a la parte de
+ front-end. Hoy ya sabemos hacer todo esto, lo vemos y lo entendemos más o menos fácil. Bien, pero ven que
+ de forma completamente dinámica yo puedo asociar eventos a un botón y esos eventos disparan que se
+ copie esta estructura. Bueno, esta estructura podría ser cualquier cosa realmente, podría tener un
+ montón de orígenes, no tendría por qué ser solamente de un fetch que viene de una API,
+ si bien es muchas veces lo más común, que yo toda la información que traigo viene de otro lado,
+ viene de una API. Esto me puede servir por un montón de cosas, pero cuando yo quiero hacer
+ cosas más complejas, por ejemplo, un ejemplo típico que siempre salta es el ejemplo de un
+ carrito de compras, ¿sí? Todo el mecanismo, el sistema de un carrito de compras es complejo,
+ no es una solución sencilla, requiere varias cosas, entre ellas guardar, por ejemplo, el estado de lo
+ que un cliente está comprando. Yo veo un producto, lo agrego y me lo guardo en el carrito, entonces
+ el carrito queda fijo en todo el sitio, yo me voy a una página, me voy a otra, vuelvo, agrego productos
+ a mi carrito y ese informe se mantiene. Bueno, todo ese tipo de manejos más elaborados con JavaScript,
+ lo que se dice vanilla, que vanilla significa así por defecto sin ningún agregado,
+ es un poco complicado, entonces aparecen los que llaman frameworks de frontend, que son estos que
+ están acá abajo, View, React y Angular, entre otros, que son justamente soluciones más complejas
+ y más completas para toda la parte dinámica de un frontend de un sitio web, de una aplicación web.
+ Pero bueno, como nuestro tiempo es limitado y tenemos que ver toda esta parte todavía,
+ nosotros cortamos acá y esto queda para una segunda etapa, para un proyecto distinto, para un futuro,
+ que eso no quita que es importante saberlo, ojo, cuando nuestro sitio requiere cierto dinamismo,
+ estas cosas pueden agregar mucho, pueden darle mucha, justamente mucha funcionalidad sin demasiado
+ trabajo por atrás, pero bueno, nosotros el corte lo pusimos acá. Nosotros ya sabemos construir un
+ sitio web, es así, es literal, ya sabemos construir una página web con varias páginas, sabemos darle
+ estilos, sabemos hacer que sea responsiva para que lo puedan ver desde varios lados,
+ esto no va a funcionar exactamente, pero ven que tenemos un comportamiento más o menos
+ razonable, si yo veo esto en un dispositivo pequeño, con un poquito de, con cambiar una
+ regla de flex, porque esto es flexbox, con cambiar un poquitito, ven acá esta flex,
+ le ponemos estos al 100% que vayan para abajo y listo. Eso ya lo sabemos hacer, hoy vemos un código
+ de estos y lo entendemos, sabemos cómo construirlo. Nos llevó un tiempo aprender todo esto,
+ pero ya es parte de nuestro paquete de herramientas. Entonces,
+ ya tenemos dominada esta parte, lo que nos queda ahora es empezar a charlar de lo que está acá,
+ bien, que es la parte de backend. El sistema como un todo es la combinación de ambos,
+ por eso es que es full stack, el stack se refiere al, stack es pila en inglés,
+ se refiere a todas las tecnologías que se usan en una aplicación de forma completa,
+ entonces cuando hablamos de full stack hablamos de todos estos, más los que tenemos que empezar
+ a charlar ahora, que son por ejemplo, bueno, vamos a empezar a charlar de base de datos,
+ lo que es una base de datos, con SQL, ahora vas a ver qué es esto,
+ y ya después me digo que no nos queda mucho más, vamos a ver Python y vamos a ver también Flask,
+ que Flask viene a jugar un rol parecido al que juegan estos que están acá, bien, React,
+ Angular y Vue, con el detalle de que en realidad para nosotros Flask va a ser mucho más importante
+ saberlo, bien, en frontend podemos prescindir de alguno de estos, en backend es medio complicado,
+ acá bueno tenemos Flask y también tenemos Django, nosotros vamos a aprender Flask,
+ porque bueno, es la que nos toca aprender, pero,
+ a ver en qué escribimos bien esto, Django, ahí está,
+ sí, nosotros tenemos que aprender, medio que sí o sí, un framework de backend,
+ que son cualquiera de estos dos, sí, hay más, estos son los más conocidos, tal vez son los más
+ grandes en cuanto a uso en Python, pero Flask y Django son a Python lo que Vue es a Javascript,
+ son justamente frameworks, que es un framework, es una herramienta de trabajo que ya me ofrece
+ un montón, me ofrece un contexto, me ofrece un marco justamente, para que yo no haga las cosas
+ de cero, para que no empiece a desarrollar algo de cero cada vez, hay un montón de aspectos que
+ son bastante técnicos, que son bastante complejos muchas veces, sobre todo en backend, mucho más que
+ en frontend incluso, que tienen que ver con la conexión con el servidor, el tema de manejar
+ procesos que corren en un servidor, el concepto de un servidor web en sí mismo, toda la parte de redes,
+ puertos, conexiones y demás, que suele ser compleja, y todo eso ya está resuelto,
+ en gran medida, cuando usamos estos dos, sí, entonces es medio inevitable, para que esta comunicación
+ ocurra, tiene que haber un par de mecanismos, que por lo general nosotros no desarrollamos de cero,
+ ya vienen dados, toda la parte de redes, toda la configuración para que una computadora se comunique
+ con otra, puede ser compleja, no nos importa, además, eso es un servidor web, un servidor web
+ justamente es una computadora que corre un software particular, uno o varios, que permiten esta
+ comunicación con no solamente una, sino con varias computadoras a la vez, o sea, una conexión múltiple,
+ que pueda recibir varias peticiones y sepa responder de forma correcta, todo eso es una
+ capa de tecnologías que no aprendemos nosotros, porque es más compleja y porque tampoco es tan
+ directa del desarrollo, tiene más que ver con infraestructura, pero no quiere decir que no es
+ importante, bien, a su vez, el servidor web se tiene que comunicar con nuestras aplicaciones de
+ Python que corren Django o Flask, y esa es la parte que nos importa, bien, justamente como
+ desarrollamos una aplicación, un proceso, cómo construimos, sí, una aplicación, un sistema que
+ sea capaz de recibir estas peticiones sin importar cómo y que sepa responder a ellas, bien, es decir,
+ esto que ya hemos aprendido desde el principio, que era request y response, esto siendo un request,
+ o sea, una petición, y esto siendo un response,
+ esta comunicación ya la conocemos, ya más o menos sabemos cómo va y cómo viene,
+ bueno, lo que nos falta aprender ahora es cómo hacemos que estas partes, primero cuáles son,
+ cómo funcionan entre sí, y cómo hacemos que este bloque, que es el backend en sí mismo,
+ sea capaz de recibir una petición, procesarla como nosotros nos parezca correcto y generar una
+ respuesta de la forma que nos parezca correcta también, sí, eso es lo que estamos aprendiendo
+ ahora, una vez que manejemos todo esto, podemos llamarnos desarrolladores full stack, porque
+ estamos manejando todo el stack de tecnologías, justamente los de frontend más los de backend,
+ eso es un poco nuestro norte de acá al final del curso, que no queda tanto, estamos en la clase,
+ fíjense que esta es la clase 22, estamos un poquito más adelantados en cuanto a
+ clases concretas, pero más o menos estamos por acá, sí, en cuanto a temar, estamos por acá,
+ nos quedan aproximadamente 20 clases, un poquito menos, medio curso pongámosle,
+ para aprender qué ocurre de este lado, perdón, me faltó poner nombre, acá es, esto es base datos,
+ bien, esto es servidor, nos queda aprender qué se hace en cada uno y cómo se hace,
+ sí, para cerrar con el ejemplo este que estamos charlando, nosotros muchas veces hablamos de backend
+ como una sola cosa, pero la verdad es que hay dos partes que son independientes, que son dos sistemas
+ separados completamente independientes, pero que están íntimamente relacionados, que son justamente
+ la base de datos y el servidor, ahora respondo tu pregunta Julio,
+ sí, justamente ven que las flechas separan un sistema de otro, claramente tengo tres partes,
+ tengo el cliente o el front-end y en el backend lo tengo a su vez partido en dos, que uno cuando
+ habla desde lejos y dice backend, dice como una sola cosa, pero la verdad es que cuando hablamos
+ de backend hay que pensar en dos partes muy distintas, que son el servidor como tal y el
+ y el motor de base de datos, sí, ahora vamos a ver que es un motor de base de datos, pero en definitiva,
+ base de datos de forma genérica, sí, son dos sistemas separados, lo que pasa acá es una cosa
+ y lo que pasa acá es otra, como muchos ya sabrán o conocen por otros lados o no, una base de datos
+ es donde yo me hace una información, bien, donde se guarda la información de Carlos, mi usuario,
+ que se creó una cuenta en mi sistema o donde llevo registro de mis alumnos o donde llevo registro de
+ la información de mi sistema de forma persistida, es decir, que se guarde a lo largo del tiempo y
+ que yo la pueda consultar de forma eficiente, bueno, acá, en una base de datos, como su nombre indica,
+ guarde información, bueno, almacenar y consultar la información es una cosa y gestionarla,
+ procesarla es otra, que no tiene nada que ver en principio una cosa con la otra, es decir,
+ son sistemas independientes, están claramente en comunicación porque cuando yo accedo desde
+ mi cliente al sitio de, por ejemplo, yo que sé, alta de alumno o el listado de alumnos, vamos con alta,
+ cuando yo accedo a alta, escribo nombre, apellido, DNI, mail, yo que sé, fecha de nacimiento, etcétera,
+ etcétera, y aprieto enviar, ocurre una petición que viaja al servidor con toda la información
+ pertinente para la creación o para el alta de un alumno, todo esto es algo que ya mencioné,
+ todo eso viaja al servidor, el servidor procesa esa información y guarda, almacena en la base
+ de datos aquellos que le importe, por ejemplo, crear un nuevo registro para el alumno número 53,
+ con su nombre, con su apellido, con su DNI, con su mail, con su fecha de nacimiento y demás,
+ una vez que esa información fue persistida, queda almacenada acá, entonces me hiciste
+ vaya, tiene registro de esta persona, lo que queda es que el servidor le responda al frontend,
+ al cliente, a la interfaz, que le diga listo, fue creado dado de alta, te llevo de nuevo a la
+ página principal para que hagas lo que quieras hacer, o te logueo, entonces estás logueado como
+ el usuario que te acabas de crear, bien? Toda esta orquesta que viene y que
+ están coordinándose varias partes, ocurre desde acá, podemos pensar que el servidor es como el
+ cerebro de toda la operación, si bien el frontend tiene una independencia bastante fuerte, o sea que
+ acá también podemos pensarlo como que tiene su propio cerebro y la base de datos también,
+ por eso es que tenemos tres sistemas independientes, el servidor es el que nuclea toda la parte,
+ todo, bien? Entonces con quién habla el frontend? Con el servidor, el servidor donde guardan
+ información en la base de datos, bien? Entonces el servidor otra vez es nuestro punto, es nuestra
+ central de control, si? Acá ocurre las validaciones de datos, las altas en la base de datos, modificaciones,
+ etcétera, bien? Entonces, ¿dónde estamos parados? Bueno, acá estamos aprendiendo hoy,
+ ¿qué pasa con todo esto? Es un poco el panorama de lo que viene de acá a que cerramos el curso,
+ ¿qué nos queda por aprender a nosotros? Es justamente base de datos más SQL, esto nos va a llevar dos
+ clases hoy y la que viene, no vamos a profundizar demasiado acá porque, bueno, porque no tiene
+ sentido realmente porque no vamos a usar, no vamos a hacer un gran uso de las bases de datos,
+ las vamos a usar pero no vamos a profundizar mucho en el tema porque tampoco va a tener sentido,
+ y después nos queda por ver Python, que va a ser el lenguaje en el cual vamos a hablar en el
+ servidor, todo lo que tenga que ver con lógica, con lo que se dice lógica de negocio muchas veces,
+ va a ocurrir en el servidor y lo vamos a programar en Python, bien? Y eventualmente ya en la etapa
+ final vamos a aprender, nosotros vamos a aprender Flask, si? Tenemos Flask o Django,
+ este curso se ha dado con ambos, nosotros vamos a optar por Flask porque es más ligero y tiene
+ menos configuración y tiene menos pasos por así decirlo para hacerlo andar, así que vamos a optar
+ por este, pero justamente Flask es el que nos va a permitir hacer que esto funcione como un servidor
+ exactamente, que no sea solamente una computadora corriendo código Python, sino que funcione como
+ un servidor, que reciba peticiones y responda con cosas y que además hable con una base de datos,
+ bien? Todo ese proceso, esa comunicación que puede ser muy compleja va a estar resuelto en gran parte
+ por defecto en el framework y nosotros simplemente vamos a configurarlo para que funcione con nuestras
+ necesidades, si? No es lo mismo construir un sitio para, yo que sé, una gestión de cursos que un
+ sitio para una gestión de, yo que sé, cualquier otra cosa, por ejemplo un e-commerce, bien? Entonces
+ necesitamos adaptarlo a nuestras necesidades y cuando cerremos Flask ya tenemos terminado el
+ curso prácticamente, bien? O sea que no queda mucho por ver, quedan unas buenas clases pero en cuanto
+ a contenido es esto que nos queda, si? Julio, cuál es mejor? La verdad que no es una respuesta,
+ la respuesta es muy fácil, depende, no hay una respuesta única, lo que sí podemos entender es
+ las características de cada uno, bien? Flask es bastante ligero, es decir, con muy poco trabajo
+ yo puedo lograr tener un servidor funcional, bien? Django es mucho más completo en cuanto a las
+ herramientas que provee, si? Ya lo vamos a estudiar a Flask para ver las herramientas de cada uno,
+ bien? Pero en general Django es una herramienta más grande, más compleja, por ende lleva más tiempo,
+ un poco más, tampoco es una cosa descomunal, pero es una herramienta más grande, por ende lleva un
+ poco más de configuración, pero también ofrece más herramientas, ofrece más, bueno justamente,
+ cosas hechas para nosotros que son muy útiles algunas, si? Entonces realmente tiene que ver con
+ qué quiero lograr yo con el uso de estos frameworks, si necesito algo pequeño y rápido, Flask me viene
+ súper bien, para cosas muy pequeñas Django es como que es muy grande para muy poco, se entiende?
+ Entonces a veces queda un poco grande, te ofrece un montón de soluciones, un montón de código y un
+ montón de cosas que quizás después no usas, entonces te termina quedando grande, mucha configuración
+ y ciertos manejos que pueden ser un poco más complejos que no te van a servir, en ese caso Flask
+ es una opción mucho más viable porque es más rápido, es más corto de implementar y demás y
+ ya lo tenés andando. Para el otro caso cuando tenés que, cuando por ejemplo tenés un sistema de base
+ de datos más bien complejo, tenés un modelo un poco más complejo que un par de tablas, ya veremos
+ a qué me refiero, bueno Django te sirve mucho más porque te da muchas más herramientas para que esta
+ gestión sea mucho más eficiente, si? No es que uno es mejor que el otro, definitivamente no.
+ Flask es más ligero, es para cosas más concretas, más rápidas, más pequeñas te diría en tamaño,
+ Django es para aplicaciones mucho más grandes, es un poco la tal vez el eje donde cortamos las
+ las aguas, para cosas simples Flask es muy útil para cosas rápidas, pequeñas, va muy bien,
+ para cosas más grandes, más complejas Django resulta muy bueno, bien, no es que uno es mejor que el otro.
+ Paola, View no lo vamos a ver, ya lo mencioné, bueno veo que vos recién llegas, pero View no lo
+ vamos a ver, si? View no es parte del contenido, si bien está en el ámbito virtual es como un extra
+ que se les da para que ustedes si tienen ganas lo puedan ver, antes me preguntaron si lo van o si
+ lo pueden usar para este TP, yo les dije que no, para el TP de Frontend y para el de Backend vemos
+ un poquito cómo venimos, si? Ahí lo volvemos a charlar para el TP2, porque ellos tienen más libertad
+ para encararlo, pero en principio no lo vamos a ver en clase, si? Y Django tampoco, Django funciona
+ como View, tiene el contenido ahí para verlo y estudiarlo, pero nosotros vamos a ver Flask, si?
+ Que es parecido, Ana, decime.
+ Te escucho.
+ Quiero que preguntan por el examen.
+ Por cuál examen?
+ Hola, buenos días, me parece que están preguntando porque en el aula virtual apareció un examen esta
+ última semana que se vencía y era sobre Vue. Está bien, digo eso funciona como ya hemos visto
+ otras veces, gente si no lo hemos visto no tiene sentido que lo, no pasa nada, lo pueden pasar,
+ se refiere a los ejercicios obligatorios, a esos están refiriendo?
+ Claro, me parece que la preocupación está en que los ejercicios obligatorios aparecen
+ igual y no saben si tienen o no tienen que resolverlo o si sigue siendo obligatorio.
+ Bueno, la pregunta de la otra igual, pero digamos en definitiva creo que ya fue respondida,
+ digamos lo que no hemos visto en clase, si está evaluado, si está puesto en el aula virtual,
+ es porque quedó de alguna forma viejo, está desconectado un poco lo que estamos dando con
+ lo que se les pide en el aula virtual, por ejemplo Django no debería estar en el
+ en el aula virtual el contenido de Django no debería estar, eso es porque hay que actualizar
+ ese contenido, está para que ustedes si quieren lo usen, lo descarguen y lo vean y lo aprovechen,
+ pero no lo vamos a ver en clase porque justamente vamos a cubrir esta otra parte.
+ Yo tampoco tengo manejo sobre eso porque no es que cada profe lo sube, eso lo suben todas
+ las comisiones, entonces puede que haya un poquito de descoordinación entre lo que se está dictando
+ y lo que está subido, la lógica es la misma siempre, si el ejercicio que se está dando no
+ se ve en clase no se preocupen, de todos modos igual está el contenido teórico si lo quieren ver.
+ La parte de Viu este cuatrimestre y acá adelante ya se decidió que no se va a dar,
+ si antes sí se venía dando por eso está todo el contenido, lo que pasa con eso también es que
+ por qué se sacó, bueno la verdad es que con toda la coordinación se charló, todos los profes también
+ nos pusimos de acuerdo, que Viu piensan que Viu hay que meterlo con todo lo que ya vimos,
+ si entonces los tiempos no daban, la verdad es que no llegábamos, si le dábamos Viu nos quedábamos
+ cortos con la parte de Bakken, entonces dijimos bueno dónde cortamos, bueno dijimos Viu que es la
+ parte más compleja, la parte más avanzada la dejamos para otro momento, la sacamos de este
+ contenido, entonces no está como parte del temario, evidentemente falta que el aula virtual responda
+ a esta misma lógica, no se preocupen si no lo vemos en clase no se les va a exigir nada
+ del otro lado de ustedes. Mariela, decime.
+ Claro, yo también calculo que el problema va a ser porque si puede llegar a figurar en el examen
+ integrador la parte de Viu, no sé si eso va a figurar en el examen integrador, en el examen
+ final más que nada como está en el aula virtual quizás en el examen final puede llegar a figurar.
+ Mira, la verdad es que no debería, totalmente entiendo la preocupación digo está bien es
+ razonable, no debería, si es así lo charlaremos, pero no debería, no debería estar, si está
+ no debería ser parte del, o sea no debería estar y punto. Si igual este martes todos los martes
+ tenemos reunión de coordinación así que estas cosas que están preguntadas las voy a preguntar
+ porque ya habíamos dicho en su momento que eso no iba a estar y que esté bueno no debería ser
+ correcto así que yo tomo lo llevo y lo consulto el martes a ver qué me dicen pero yo no me
+ preocuparía en principio sí porque otra vez si no se vio en clase no tiene sentido que se lo
+ evalúe definitivamente no. Bien. Ok, perfecto, gracias.
+ Cuestión.
+ Esto es un poco el panorama, perdón Álvaro, Flask lo usamos con boost trap? No, a ver,
+ digamos probablemente Flask tenga algún tipo de conexión con boost trap pero son cosas distintas
+ en principio, sí? Entender lo siguiente nosotros en frontend vimos boost trap y eso se usa acá
+ en backend nosotros vamos a aprender cómo procesar peticiones que nos llegan del frontend
+ y vamos a generar respuestas en consecuencia, sí?
+ veremos cómo estamos con el contenido si hacemos una conexión desde Flask con boost trap. En
+ principio no tengo una respuesta concreta para darte, tendremos que ver después qué tanto cubrimos
+ de Flask porque también hay cosas que estamos cerrando otra vez con la coordinación, sí?
+ Entonces yo en principio te diría que no porque son cosas separadas, Flask tiene más que ver con
+ Python que con boost trap pero veremos después cómo los conectamos, sí? Si la duda va por el
+ tema de si en una cuestión más general la verdad es que en principio hay que entenderlo como cosas
+ separadas porque a ver por qué digo esto por ejemplo en Django uno tiene algo que se llama
+ boost trap for Django que es una cosa específica que tiene Django para hacer contenido web desde
+ Django un poco más fácil usando boost trap, sí? Hay que ver si eso entra o no para Flask, yo en
+ principio te diría que no pero bueno lo vamos viendo cuando pasen un par de clases más, sí?
+ Cuando tengamos más definidas estas cosas. En principio lo que nos importa entender es lo que
+ les expliqué recién, nosotros estuvimos estudiando esta parte y lo que nos importa estudiar ahora es
+ esta otra parte, la parte de backend, cómo se usa Python, en qué contexto la base de datos interactúa
+ con nosotros en el servidor y cómo construir un servidor web en la parte de backend de forma fácil,
+ de forma sencilla con Flask, van a ver que realmente no tiene mucha configuración y ya nos va a permitir
+ establecer este tipo de conexiones, eso es un poco la gracia de Flask. De ahí vamos viendo.
+ Entonces dónde estamos? Bueno tenemos que charlar de SQL, bien? O sea esta clase y la que viene,
+ la clase de hoy y la bueno la 22 y la 23 nos va a ocupar justamente qué ocurre acá, sí? En
+ este lugar y después eventualmente en el medio tenemos Python pero después veremos cómo se hace
+ esta conexión, bien? Cómo hacemos para que el servidor hable con la base de datos y viceversa,
+ cómo hacemos para que la base de datos nos dé la respuesta que estamos buscando. Esta conexión es
+ muy parecida a esta otra en el sentido de que la base de datos no me dice las cosas a mí porque sí,
+ yo se las pido y él me responde, bien? Entonces tenemos que entender qué está pasando acá adentro.
+ Esto no, perdón, acá. Bien? Entonces
+ esto es lo que vamos a empezar a charlar hoy y el miércoles ya cubrimos la segunda parte y la última.
+ ¿Qué es un motor de base de datos? O mejor dicho, ¿qué es una base de datos? Bueno,
+ como ya mencioné, es el lugar donde se almacena la información de mi sistema, se persiste,
+ es decir que se guarda de forma perdurable en el tiempo, bien? No es simplemente una variable,
+ sino que es algo mucho más concreto, no concreto, pero mucho más sólido,
+ sí? La información que yo guardo ahí se guarda de forma indefinida y como todo lo demás que hemos
+ manejado es la información puede cambiar, yo puedo por ejemplo crear un registro de un alumno y le
+ podré cambiar los datos si hiciera falta, bien? Ahora vamos a profundizar un poquito más cómo funciona
+ esto, pero ya de entrada hay que entender que hay dos lugares, hay dos conceptos muy importantes que
+ son, quiero ver dónde está puesto en la presentación, pero hay dos partes importantes
+ de entre una base de datos, sí? Que son los siguientes, yo dentro de mi base de datos tengo
+ algo llamado, o bueno, ni siquiera es dentro de la base, cuando uno habla de base de datos habla de dos cosas,
+ uno por lo general habla de,
+ si quieren podemos pensarlo hasta como tres, sí? Nosotros tenemos,
+ vamos a pensarlo así, sí?
+ Yo acá tengo mis tablas, que ahora vamos a ver qué son las tablas,
+ tengo el DBMS, que significa database management system,
+ y después tenemos, separado a un costadito, esto van a ver que es como el gráfico que
+ hice antes, pero como en una escala más pequeña, tenemos el cliente, sí?
+ Pero que el cliente puede ser de varias formas, no es tan literal como visto antes,
+ pero dentro de una base de datos ocurren estas dos cosas, estas tres cosas, sí? No dentro,
+ pero en el concepto de base de datos, hay tres componentes principales, que son,
+ el DBMS, que ahora escribo lo que, cómo se escribe acá,
+ sí? Cuando hablamos de base de datos, hay tres conceptos que entran en juego,
+ que son, el DBMS, la información concreta, lo estoy llamando tablas, sí? Que es la información cruda,
+ es la información guardada físicamente en algún disco duro, vamos a llamar la información neta,
+ porque es, dónde se guarda la información? En tablas, dónde guardo la data de mis docentes,
+ dónde guardo la data de mis productos? En tablas, sí? Y por último, el cliente de base de datos,
+ sí? Cuando estudiamos base de datos, tenemos que entender los tres conceptos,
+ qué es el motor, qué es el base de datos, qué es el motor de datos,
+ cuando estudiamos base de datos, tenemos que entender los tres conceptos, qué es el motor,
+ qué son cómo funcionan las tablas y cómo me comunico con la base de datos, sí? Con estos dos,
+ fíjense que acá tenemos otra vez cliente y no es un servidor, pero tenemos la parte que responde,
+ el cliente pide algo, el servidor responde, bien? Entonces, cuando hablamos de cliente,
+ esta es la parte más fácil, aparece MySQL, aparece Oracle, nosotros vamos a ver Postgres,
+ son todos iguales, así que Postgres es el que vamos a ver nosotros, porque es fácil de instalar
+ y tiene menos vueltas que MySQL, por ejemplo, hay un montón de estos, acá mencioné tres nomás para
+ que se entienda. Por lo general, cuando yo me descargo, por ejemplo, Postgres, me descargo todo,
+ sí? Me estoy descargando cliente y motor, vienen todos juntos, van a ver que de hecho, ya que te
+ los muestro, cuando ustedes buscan Postgres para instalárselo,
+ y vienen acá, ya sea Downloads o si están directamente en Windows, Windows Installers,
+ sí, vienen acá
+ y los trae a este sitio.
+ Si ustedes tienen Linux, se lo pueden bajar desde acá, para Mac también, pero fíjense que cuando
+ ustedes se bajan Postgres, esto ahora se los explico más en detalle, pero cuando ustedes se bajan
+ Postgres, se están bajando realmente todo junto, se están descargando un motor con su cliente.
+ Para nosotros, que vamos a estudiar Postgres,
+ sí, que se escribe así, para nosotros la base de datos viene con todo junto, viene con el
+ DMS más el cliente. El DMS es un software, es un sistema que nosotros mucho no interactuamos
+ directamente, sino que hablamos con él a través del cliente. Ahora voy a explicar esto, sí? El
+ cliente se llama PG Admin en Postgres, sí? Ahora vamos a ver qué es esto que estoy diciendo,
+ pero el motor es el motor, podemos llamarlo directamente Postgres si quieren. El cliente
+ es un software aparte que se llama PG Admin y que nos permite hablar con el motor. Ahora vamos a
+ explicar las partes en detalle, sí? Pero cuando empezamos en base de datos, no simplemente como
+ un lugar donde voy de información, sino como un sistema que quiere aprender, tenemos que entender
+ tres conceptos independientes, sí? Que obviamente están íntimamente relacionados, pero que son
+ distintos, son justamente independientes. Acá lo que tenemos en las tablas, por ejemplo, pensemos en,
+ vamos a ir desarrollando un sistema nosotros de gestión de un curso, bien? Vamos a pensar en alumnos,
+ en docentes y en cursos, y tal vez en inscripciones, sí? Tal vez no digo y en inscripciones, digo,
+ un alumno se puede inscribir en un curso que tiene un docente. Entonces cuando pienso en tablas,
+ pienso en la tabla alumno, pienso en la tabla docente en singular, sí? Pues la tabla de docente,
+ la tabla de alumnos, y por ejemplo la tabla de curso, sí?
+ De alguna forma sí, Cynthia, pero esto es algo más interno. Postman no es un cliente de base de datos,
+ Postman es un, es un, ni siquiera es un cliente, hace con, va, en realidad es un cliente, pero para la parte de APIs.
+ Vos con Postman lo que haces es ponerte en este lugar. Postman ocupa el lugar del cliente y te
+ permite hablar con una API, sí? Fijate que acá vos tenés un frontend y un backend. El frontend en
+ vez de ser una página web es el Pg, es el Postman, sí? El Postman lo que hace es ejecutar peticiones
+ HTTP y HTTPS a una API o a un servidor. En ese sentido se ubica acá, bien? En vez de tener una página web,
+ tenés al Postman. En cambio un cliente, fíjate que se pone del mismo lugar, pero no es lo mismo.
+ Un cliente de base de datos te permite hablar con la base de datos a nivel usuario. Vos como usuario
+ de base de datos vas a poder hablar con la base a través de algún cliente, siempre, sí?
+ Justamente el DMS no es que vos vas directamente y le metes código a él,
+ hablas a través de alguien, de un cliente, sí? En ese sentido sí son parecidos, pero bueno,
+ son distintos porque acá no tenés realmente un frontend y un backend, es medio todo lo mismo, sí?
+ Si bien podría pasar que estas dos cosas estén físicamente separadas, por eso es que hay un cliente
+ y un otro lado, pero bueno, hay ciertas analogías pero no son lo mismo.
+ Esto me quedó horrible, no sé por qué quedó tan feo, pero bueno, acá lo que quería decir es docente,
+ ah porque tiene poca... bueno, importa. Curso,
+ y también tenemos, ya que estamos, pongámoslo,
+ que ahora van a ver cómo se mezcla todo, inscripción, sí?
+ Que es otra entidad que vamos a aprender acá también. Inscripción.
+ Entonces, cuando pienso en base de datos, nosotros ya tenemos que empezar a pensar un poco más hacia
+ dentro y aparecen estas cosas, aparece el concepto de tabla, el concepto de DBS,
+ el concepto de cliente. Hoy vamos a charlar y a discutir qué pasa con cada uno de estos,
+ qué hacen, cómo funcionan, cómo se comunican y qué hacen, sí? Las tablas son la forma en la que
+ yo armación información, sí? Vamos a empezar por acá. Nosotros,
+ cuando hablamos de tablas, estamos hablando necesariamente, bueno, no necesariamente,
+ pero por lo general es implícito cuando uno habla de tablas, hablar de bases de datos relacionales.
+ Bien? Esto van a ver que después hay un nuevo tipo de bases de datos que son las no relacionales,
+ pero estas no las vamos a estudiar. Vamos a estudiar estas, las bases de datos relacionales.
+ ¿Por qué son relacionales? Bueno, porque se definen tablas, tablas en el sentido muy parecido
+ a Excel, donde yo tengo filas y columnas, sí? Pero a su vez estas tablas están relacionadas,
+ bien? De alguna forma, ya veremos cómo. Pero lo que ocurre es que cuando yo registro,
+ por ejemplo, a un alumno, lo registro a un curso, sí? Y a su vez el curso tiene un docente.
+ Estoy haciendo flechitas medio hacia lo pavote, no estoy haciendo un gráfico como muy...
+ No va más allá de una explicación. Para esto hay algo llamado UML, sí? O llamado DER también,
+ acá vamos a ver lo que es. Pero en definitiva es un grafiquito así nomás para que entiendan la
+ idea. Yo acá lo que estoy definiendo cuando pongo flechitas es que hay relaciones entre tablas. La
+ información se guarda en tablas. ¿Cómo se ve una tabla? Literalmente como un Excel, sí?
+ Cuando yo... esperen que lo abra acá a un costadito...
+ Este nuevo, perdón, acá.
+ Y acá, y acá. Esto quería decir. Cuando yo hablo de base de datos o cuando hablo de tablas,
+ tenemos que pensar en un Excel. Es la forma más literal que pueda haber porque de hecho,
+ conceptualmente son lo mismo, bien? Con un agregado que es la parte relacional. Pero
+ supongan que yo quiero hacer una tabla de alumnos, sí? De hecho vamos a hacer estas cuatro ahora,
+ eventualmente. Estas cuatro que yo mencioné. Alumno, curso, docente e inscripción. ¿Qué puede
+ ser un alumno? Bueno, para empezar, un alumno es una entidad dentro de mi sistema. Bien? Vamos a
+ aprender que dentro de las tablas tenemos un registro único que es un ID. Es muy parecido
+ al ID de HTML. Siendo justos, el ID de HTML es parecido a este concepto que estamos aprendiendo
+ pero bueno, es al revés la dinámica. Pero el concepto es el mismo. Es un identificador único.
+ Cuando yo digo ID, tenemos que asociar la idea de único. Es una cosa que no se repite,
+ que me permite identificar a un elemento de otro. ¿Cómo es la tabla de alumno? Bien, vamos a hacerlo
+ así. Bueno, una tabla de alumno tiene justamente este ID que mencionaba antes, que es un identificador
+ único, que si bien lo aprendimos en HTML, medio que la inspiración sale de las bases de datos.
+ Eso es lo que les quiero decir, que es este identificador único. ¿Qué compone un alumno?
+ Bueno, un nombre, un apellido. Esto claramente podría cambiar pero es una forma fácil de pensarlo.
+ Un nombre, un apellido y un DNI en principio. No tiene mucha historia. Entonces, la tabla de alumno
+ está compuesta por columnas y a su vez por campos. Fíjense que seguramente estos campos podrían
+ llegar a tener distintos tipos de datos. En ese sentido, las tablas respetan esta idea de los tipos
+ de datos. Distintas columnas, la columna de nombre, apellido, DNI podría ser un número. Estos pueden
+ ser strings, esto es un ID, que es un número pero es un ID en definitiva. Son de tipos distintos.
+ Entonces, ¿qué es lo que tengo acá? Tengo una tabla.
+ Justamente yo vengo y digo, bueno, ok, tengo mi alumno y acá tengo mis columnas.
+ Ahora escribimos un par de registros. Pero cuando yo pienso en base de datos relacionales, que es lo
+ que estamos estudiando nosotros, tengo que pensar en esta idea. Como primera bajada de línea, yo tengo
+ tablas. Tengo una o varias tablas. Acá tengo un alumno. Le podemos dar colores alternos.
+ Entonces, fíjense que me las pinta de colores. Tendremos la tabla docente,
+ que se va a parecer bastante a esto. Vamos a ponerle otro color.
+ Sí, vamos a ponerle ahí.
+ Ya que estoy las creo a todas, así ya me queda
+ la idea. Tenemos aparte de DNI, podríamos tener, para el caso del docente, vamos a llamarle quit,
+ que es como el quit, el código único identificador del trabajador que anda por ahí. Es una forma de
+ identificar un docente en la FIP, por ejemplo.
+ Así y así.
+ Bueno, también.
+ ¿Qué más tenemos?
+ Docente, curso. O sea, la información propia de un curso. Vamos a ponerle su ID. Vamos a ponerle,
+ espérenme que lo voy a copiar así. Hacemos nuestro trabajo. Tenemos el nombre del curso, la descripción.
+ O sea, un texto que dice lo que es. Tenemos de qué turno es. Y vamos a tener dos cosas más. Vamos a tener
+ un cupos máximos, lo habíamos puesto. Estoy replicando esta lógica que yo describí acá,
+ que después veremos. Si estos códigos en Google. Curso tiene nombre, descripción, turno, cupos y docente.
+ Perfecto. Ahí está. Entonces, un curso, además de tener un nombre que lo identifica, una descripción
+ que dice lo que es, a qué turno pertenece, mañana, tarde, noche. Y cuántos cupos puede haber,
+ cuántos alumnos pueden inscriptos. Tenemos también un docente.
+ Y ahora vamos a empezar a pensar. Van a ver que tenemos una tabla más, que es la de
+ inscripciones. Y medio que ahí estamos. Le ponemos otro color. Los colores son simplemente para que
+ vean que son cosas distintas. No pasa de ahí. Pero ayuda bastante. Al toque te das cuenta cómo va la
+ cosa. Y por último, me quedé sin lugar. Vamos con inscripción. Vamos a hacerlo acá abajo.
+ Inscripción tiene 1, 2, 3, 4.
+ 4. Ahí está. Perfecto. Entonces vamos con este. Acá. Inscripción. Me estoy macheteando lo que
+ vamos a ver en breve. Esto simplemente para que quede todo igual. Entonces tenemos ID. Tenemos
+ un alumno. Tenemos un... Ahora vamos a ver por qué es esto. Tenemos un curso y tenemos una fecha de
+ inscripción. O sea, cuándo se dio de alta un alumno en un curso. Y bueno, por último esto,
+ le hacemos también... Esto es una sola cosa. Le hacemos así. Ve que le puse cuatro filas. Es por
+ dar una cantidad. No tiene por qué hacer cuatro. Es para que se entienda que es una tabla. Esto tiene
+ otro color. Y a su vez le ponemos muy bonitamente las líneas que marcan una cosa de la otra.
+ Bien. Todo esto para qué? Bueno, para justamente entender
+ qué son las tablas. Bien, que es la primera parte de este concepto que estamos aprendiendo.
+ Entonces, las tablas son esto. Son... Es información dispuesta en filas y columnas,
+ donde cada columna describe un campo. Por ejemplo, el identificador único, el nombre,
+ el apellido y el DNI de un alumno o de docente, curso e inscripción. Este último lo vamos a ver
+ al final. Bien. Estas son las columnas. Es decir, cada tipo de dato, cada columna de un tipo de
+ dato que describe algún campo, alguna referencia de lo que es un alumno. Bien. Y después tenemos
+ filas. Justamente las filas se completan con distintos registros. Yo voy a completar, por ejemplo,
+ los primeros tres alumnos. Bueno, el primero se llamará Carlos, después tenemos María y José.
+ Siempre son los mismos nombres. Tenemos Carlos López, María del Cerro y acá tenemos a José Pérez.
+ Bien. Con sus DNIs inventados. 5, 6, 7, 8, 8, 9, 0, 3, 4, 5, 6. Sí.
+ Este me quedó de más.
+ Entonces ven que estoy describiendo información, pero la información no está suelta así nomás.
+ Está dispuesta de una forma muy ordenada, que es justamente en el concepto de tablas. Cada tabla
+ es en principio independiente. Cada una guarda cierta información. Y si fuese así, me veo que
+ es un excel y ya está. No me importa mucho más nada. O sea, tengo campos que yo guardo con la
+ información de cada uno. Bien. Evidentemente no es casual esta elección de tablas. Tengo un alumno,
+ un docente, un curso y una inscripción. Claramente quiero que entre ellas estén relacionadas las
+ tablas. Yo quiero que haya información que esté hablando de otras tablas. Por ejemplo,
+ vamos con un curso. Vamos con dos cursos. Yo quiero que, de hecho, primero pongamos un docente
+ para que entiendan por qué. Sí. Tres docentes. Vamos con Romina González, DNI, no me importa
+ mucho. Quit, mil. Vamos con Mario. Algún apellido que se me esté olvidando. González Pérez, Gómez.
+ Otro DNI. Quit, 2500. Y vamos con un docente más. Gastón.
+ Se me acaban los apellidos.
+ Díaz, gracias. Ahí va. Díaz López. Buenísimo. López ya lo usamos. Díaz me sirve. Perfecto.
+ Tuqui tuqui. Y quit, tuqui tuqui. Hasta acá está todo bien. El concepto de tabla es este. Yo tengo
+ información dispuesta en un mismo contenedor, en un mismo lugar, en una tabla, donde cada columna,
+ cada campo responde a un tipo de dato específico y cada fila es un registro. La fila 1, el primer
+ registro es la persona de ID 1. Fíjense que este ID es un número que no se va a repetir. Bien. Cada
+ persona tiene su propio ID. Con este número yo puedo identificar a cualquier persona. ¿Por qué
+ es importante esto? Bueno, porque si yo quiero referirme a la persona, a una persona en particular,
+ la puedo buscar por ID. Yo te digo ¿quién es la persona 3? Bueno, es José Pérez. No hay tu tía.
+ Es un valor único que no se va a repetir en toda esta tabla. De tabla a tabla sí se pueden repetir
+ porque son tablas distintas. Pero dentro de una tabla cada ID me permite identificar unívocamente
+ un registro. Igual que en HTML cuando yo tenía una etiqueta con una ID y me permitía encontrarla
+ de forma única. Bueno, acá es lo mismo. Bueno, tenemos alumno, docente. Y fíjense que acá en curso
+ empieza a aparecer esta idea de relación. Porque completemos el primer curso. Tenemos Full Stack
+ Python. La descripción será lo que tengamos ganas. HTML, CSS, JS, Python y Flask. Lo estoy inventando.
+ Turno mañana. Cupos máximos yo que sé. 100. Y acá viene la parte importante.
+ ¿Cómo hago para decir, porque lo que yo quiero hacer es que un curso esté dictado por un docente?
+ Si no tengo a nadie es porque el curso aún no tiene docente asignado, pero si tiene, tiene a uno solo.
+ Entonces, ¿cómo hago yo para decir que esta tabla tiene a tal docente?
+ Ustedes podrían decir de forma correcta, como dijeron por ahí, con el ID. Bien. Uno podría decir,
+ bueno, anotale medio que así hablando a mí pronto. En vez de tener docente, tener la referencia de todo
+ el nombre, apellido, ID, DNI y quit. Pero esto es impractiquísimo, ¿no? Estoy yendo mal a propósito.
+ Digo, tal vez me interesa saber del docente todos sus datos. Pero esa información ya está en otro lado,
+ ¿no? Está en la tabla de docente. Entonces, cuando yo me quiero referir a un docente en particular,
+ no lo voy a hacer de forma así. No voy a escribir su nombre, apellido y quit otra vez. No voy a
+ duplicar su información. A veces no me queda otra, pero no es el caso. Yo justamente lo que quiero
+ acá es referirme a un docente, pero no lo quiero llamar por todos sus campos. Me quiero referir a
+ él de la forma más simple posible. Bien. Que sea óptima en espacio y que además no permita errores.
+ Porque vieron que cuando uno programa, cuando uno duplica información, corre el riesgo de que esa
+ información se desfase y que la misma cosa realmente sean dos cosas distintas. Bueno, acá pasa lo mismo.
+ Esto no es una forma eficiente de guardar la información, porque estos mismos datos ya están guardados en otra tabla.
+ Entonces, yo lo que quiero acá, como ya habrán identificado, no quiero poner al docente completo.
+ Quiero poner una referencia al docente. Sí. Acá, por ejemplo, pondré al docente 1. Cuando yo veo esto,
+ estamos hablando de justamente relaciones entre tablas. Y estoy diciendo que el docente 1 fue asignado a este curso.
+ Bien. Yo vengo acá y te digo, por ejemplo, tenemos otro curso de full stack, pero con No GS, que es otro que se da acá también.
+ Bueno, No GS es parecido, pero se da Node en vez de Python. Muy original. Turno noche. Cupos máximos también 100.
+ Y el docente quién es? Bueno, otro. El docente 3. Bien. Ven que tenemos dos columnas con IDs.
+ Estamos de acuerdo, no? Pero esta tabla, perdón, esta columna describe de forma unívoca los campos de la tabla curso.
+ Y en cambio, esta tabla, esta columna, lo que está haciendo es referirse a los IDs de otra tabla. Estamos de acuerdo, no?
+ Esta esta esta columna mira a la tabla de docentes. Bueno, lo que estamos describiendo justamente es que la tabla de docentes es un
+ concepto principal que define a las bases de datos relacionales. Esto mismo. Yo tengo tablas que están relacionadas entre sí. Bien.
+ Es esto mismo que está acá. Un curso tiene un docente asignado. Sí. Entonces, el hecho de que sean tablas relacionales habla de esta idea.
+ De que yo tengo tablas en el sentido literal de la palabra. Tengo filas y columnas, pero que a su vez distintas tablas están relacionadas entre sí. Bien.
+ Esa relación se busca que sea lo más eficiente posible, que se repita la menor cantidad de información posible y que se duplique, que se repite la menor cantidad de información posible.
+ Muchas veces no se repite nada. A veces no me queda otra. A ella entramos en otra discusión que es cómo se modelan, cómo se diseñan las bases de datos.
+ Sí. Eso nos escapa un poco el tema a nosotros porque es más complejo. Bien. Y por último, inscripción.
+ Lo que estamos viendo es que la tabla de docentes es un concepto que se llama de la tabla de docentes.
+ Bien. Y por último, inscripción. Lo que estamos viendo acá es lo que se conocen como las dos relaciones más... Bueno, hay tres que son relaciones que vamos a mencionar, pero tenemos tres relaciones.
+ Tenemos... Digo, si yo tengo relaciones, tengo bases de datos relacionales. Bueno, entre tablas, yo defino relaciones.
+ Sí. Tenemos tres tipos. 1 a 1, 1 a n y n a n. Bien. 1 a 1 no la hice acá, la estamos salteando.
+ Sí. Pero es cuando un registro está relacionado como máximo con uno de otra tabla. Entonces tengo una relación de 1 a 1.
+ Una tabla, una relación 1 a 1 podría ser, por ejemplo, detalle de alumno. Una tabla de detalle.
+ Por ejemplo, en esta otra tabla guardaría toda la data de inscripción. Yo qué sé. Documentación, foto y fotocopia del DNI, vieron el título secundario, cosas por el estilo.
+ Bien. Eso es una tabla, una relación 1 a 1. Cada registro acá tiene 1, exactamente 1, equivalente en otra tabla. Eso es un 1 a 1.
+ 1 a n es el que está acá. Es la relación que hay entre curso y docente.
+ Es lo mismo, pero bueno, docente a curso, sí.
+ ¿Por qué? Bueno, porque un docente puede estar inscrito en varios cursos. O sea que hay una relación múltiple.
+ Yo podría tener un profesor que dé más de un curso. Por ejemplo, en mi caso yo tengo tres comisiones.
+ Pero cada comisión tiene un docente. No puede tener varios. Tiene uno, exactamente.
+ Entonces ven que la relación se define como 1 a n. Un docente puede dar muchos cursos, pero un curso solamente puede tener un docente asignado.
+ Así lo describimos, así lo definimos. Bueno, eso se llama un tipo de relación llamado 1 a n. Bien.
+ Y tenemos otro que es n a n, que es este último que ahora voy a explicar.
+ Exacto, María, justamente. Fijate que por eso tengo una columna docente. Si no fuese el caso sería distinto.
+ Podría pasar que yo, como en la facultad, que yo tengo un docente o una materia que tiene, por ejemplo, dos profesores.
+ Eso pasa a veces. No es nuestro caso en estas tablas. Entonces es una relación de 2 a n.
+ ¿Por qué es 1 a n? Por lo que les digo. Fíjense que las relaciones pueden ir y venir. Las relaciones están, tienen dirección.
+ Van en un sentido. Pueden ir en ambos. Digo, si va puede volver. Entonces, piénsenlo de esta forma.
+ Un docente puede tener un profesor que dé muchos cursos.
+ Definitivamente. Yo podría, este curso lo podría dictar el mismo profesor o varios cursos estar dictados por la misma persona.
+ Pero cada curso, digo, piénsenlo como que va y como que viene. Digo, de docente a curso puedo tener varios. Un mismo docente, varios cursos.
+ Pero cada curso, digo, piénsenlo como que va y como que viene. Digo, de docente a curso puedo tener varios. Un mismo docente, varios cursos.
+ Pero al revés, curso a docente es de a 1. Un curso está dictado por un docente exactamente.
+ Entonces la flecha que vuelve, por así decirlo, es de en cantidad, lo que se dice la cardinalidad, es de a 1.
+ Porque justamente el curso lo dicta un docente. Si ese es el caso, que en un sentido tengo n y del otro tengo 1.
+ O sea, tengo muchos y en el sentido inverso tengo 1. Hablamos de 1 a n.
+ Esto tómenlo como con algo general, no lo tomen como algo muy técnico porque es para que entiendan los conceptos.
+ No vamos a profundizar en esto porque es una introducción. Y porque esto puede ser mucho más complejo.
+ Entonces simplemente entiendan que cuando hablamos de tipos de relaciones, hablamos de esto.
+ Como estas relaciones que yo defino pueden ser de varios tipos.
+ El docente a un curso, con estas características que un curso es solamente un docente.
+ Un docente a un curso es una relación de 1 a n. Lo repito una vez más.
+ Un docente dicta varios cursos, pero un curso es solamente dictado por un docente.
+ En ese caso es un 1 a n o un n a 1. Es lo mismo.
+ Hasta acá todo bien. Pero y acá qué pasa? Bueno, fíjense, acabamos en los primeros 4 o los primeros 3.
+ ¿Qué pasa? Acá no es tan fácil. Esto es como una solución a un problema que se les puede plantear.
+ Que es como plantear la inscripción de muchos alumnos en varios cursos.
+ Bien, en Codacodo no es el caso, pero supongan ser en la facultad, en un instituto, en el secundario incluso.
+ Un alumno puede tomar varios cursos o varias materias. Bueno, y a su vez una materia tiene varios alumnos.
+ Entonces, ¿cómo se representan esas relaciones? Piénsenlo otra vez de la siguiente forma.
+ Yo quiero relacionar la tabla de alumnos y cursos. Quiero inscribir un alumno a un curso.
+ Y acá lo estamos hablando no a nivel código, de cómo lo programamos, sino a nivel datos.
+ ¿Cómo represento? ¿Cómo guardo esa información? ¿Cómo hago para que un alumno se inscriba un curso y esa información quede guardada?
+ En una base de datos relacional. Bueno, primero tengo que tener definido el modelo.
+ Que es esto que estamos charlando. ¿Cómo se ven las tablas?
+ Bueno, lo siguiente es entender que yo quiero que se relacionen alumnos y cursos.
+ Definitivamente, porque yo quiero inscribir un alumno a un curso.
+ Entonces, ¿cómo hago eso? Bueno, para hacer una relación de N a N, esto es como el resumen.
+ Necesitamos una tabla intermedia. Bien.
+ Fíjense que acá no es tan fácil. Yo no puedo poner acá, no se puede porque es así.
+ Yo no puedo tener una columna que diga alumnos.
+ Porque los campos guardan un valor. Entonces yo acá sería ideal, pero no es el caso.
+ Tener un lugar, un registro en cada celda, estaría buenísimo anotar, por ejemplo, 1, 2, 3 y 4.
+ Los alumnos inscriptos. Pero no funciona así en base de datos relacionales.
+ No tenemos esta capacidad de decir, bueno, poneme una columna de alumnos y que el curso 1 tenga a estos alumnos inscriptos.
+ Eso no se puede hacer. Entonces tengo un problema. ¿Por qué? ¿Cómo hago?
+ Porque ¿cómo hago para registrar que en el mismo curso tengo más de un alumno al mismo tiempo?
+ Tendría que empezar a repetir información acá y no quiero hacer eso.
+ Entonces no me queda otra que meter una tabla intermedia.
+ Que combine la información de una tabla con la información de otra.
+ Bien. Es justamente una tabla intermedia que es la forma más convencional en la que se implementan los N a N.
+ N a N ¿qué significa? Muchos a muchos.
+ Y es, por ejemplo, un alumno es lo que un alumno es a un curso.
+ La relación entre alumnos y cursos no se puede describir efectivamente con dos tablas. Necesito tres.
+ Es decir, las que se combinan y una intermedia que las combine.
+ ¿Sí? ¿Por qué?
+ ¿Ven cómo está dispuesto esto? Bueno, quiero anotar al alumno 1 al curso 1.
+ Bueno, ven que tengo alumno, curso y descripción.
+ La forma de hacerlo es ¿qué alumno quiero? El 1. ¿A qué curso lo quiero referir? Al 1.
+ ¿Cuándo se inscribió? Hoy. Yo qué sé. Hoy que es 20 del 5.
+ Bien. El alumno 2 también se inscribió al curso 1.
+ Y recuerden que esto es una referencia a otra cosa. Entonces, cuando yo veo alumno 2, me estoy refiriendo a María del Cerro.
+ Cuando digo alumno 1, me refiero a Carlos López.
+ María se inscribió ayer, 19 del 5. Bien.
+ Quiero además que Carlos esté inscrito en el curso 2.
+ Bueno, vengo a esta tabla y digo alumno 1, curso 2.
+ Fecha y descripción, hoy. Porque lo hizo todo junto.
+ ¿Sí? Y por ejemplo, José está también inscrito en el curso 1.
+ José se inscribió el 15 del 5.
+ Bien. Esto podría seguir.
+ Ven que esto parece medio una cosa extraña, si no lo entendemos en contexto.
+ Entendiendo que esta columna define cada registro y me registra cada inscripción individual.
+ Es decir, ¿qué alumno, en qué curso, cuándo?
+ Este primer ID. Por ende, yo no puedo tener dos inscripciones iguales.
+ Yo no quisiera inscribir dos veces al mismo alumno en el mismo curso.
+ Eso es razonable. Yo no quiero que el alumno esté inscripto, que esté registrado, que se inscribió dos veces.
+ Porque me puede tener problemas en mi sistema. Yo quiero que se registren una vez a un curso.
+ Entonces, el alumno 1 se registra al curso 1. Listo. Ya está inscrito.
+ En ese curso. Se inscribió en tal fecha. Bien.
+ Y así con todos los demás.
+ Ven que claramente yo puedo inscribir al mismo alumno a varios cursos.
+ Eso es 1 a N. Un alumno a varios cursos.
+ Pero a su vez, un curso puede estar compuesto por varios alumnos.
+ Entonces, vaya o venga, tengo multiplicidad.
+ Un curso, varios alumnos. Un alumno, varios cursos.
+ Eso es un N a N. Es un muchos a muchos.
+ Es esta idea siempre.
+ Y la forma de hacerlo es con una tabla intermedia.
+ Que me permite justamente hacer esto.
+ Entonces, yo al alumno 1, lo puedo inscribir a los cursos que quiera.
+ Y a su vez, al curso 1, le puedo inscribir los alumnos que quiera.
+ Me siguen.
+ Preguntas, dudas hasta acá.
+ Algo que no haya quedado claro.
+ Esto que estoy explicando es así en general. Bien. No es código. Es conceptual.
+ Dudas, preguntas. Algo que no esté claro.
+ Bien. Bueno, esto que yo les mostré acá es un poco lo que vamos a llevar adelante.
+ Nosotros en clase. De acá.
+ Con todo lo que nos queda. Sobre todo la parte de Flask.
+ Y bueno, igual se da esto cuando veamos cómo desarrollar el Bakkegen y demás.
+ Vamos a pensar en estas tablas para que ya nos quede lo que se dice un modelo.
+ Bien.
+ Y ahora vamos a ver cómo hacer esto.
+ Vamos a tener que definir estas tablas para que ya nos quede lo que se dice un modelo.
+ Bien.
+ Justamente lo que queremos es tener un modelo de datos definidos.
+ Esto es para la clase. Ustedes van a tener que definir los propios.
+ Pero van a tener que respetar esta idea. Bien.
+ De definir por lo menos dos tablas que estén relacionadas entre sí.
+ Bien.
+ Ya cuando pensamos en tablas, en modelos, perdón.
+ Cuando pensamos en bases de datos relacionales, pensamos en tablas.
+ Y a su vez, en relaciones entre tablas.
+ Que son justamente estas tres que yo les mencioné.
+ Me queda, bueno, me quedan varias cosas más por decir.
+ Por ejemplo, que es un DBS y que es un cliente.
+ Hoy ya tenemos un concepto general.
+ Sí, sí, Sergio, definitivamente. Definitivamente.
+ Es un poco la idea. Se acuerdan que al principio de todo lo charlamos.
+ De hecho, al principio del curso.
+ Que ustedes tengan un poco esta información planteada.
+ Pero sí, sí, definitivamente.
+ Después charlamos el TP. Pero van a poder hacer lo que quieran.
+ Pueden plantearlo nuevo. Pueden empezar de nuevo.
+ O pueden usar el que ya hicieron. Eso va a depender de ustedes.
+ Tienen ambas opciones.
+ Me queda un concepto más que voy a explicar.
+ Que ya medio que lo explicamos. En realidad, pero no pusimos nombre.
+ Vieron que nosotros hablamos de IDs en dos contextos, ¿no?
+ Tenemos un ID que me identifica en una tabla.
+ En una tabla, adentro de la propia tabla, un campo de otro.
+ ¿No? Dijimos, el registro 1, solamente hay uno.
+ Que es el de el alumno en particular. Sí, yo lo activo.
+ Ahí está.
+ El ID es un registro que me permite identificar a un alumno de otro.
+ Hay solamente un alumno 1. O un alumno 3, si quieren.
+ Para no repetir en todo uno.
+ El alumno 3 es uno solo. Es este que está acá.
+ Si yo busco en esta tabla el ID 3, me encuentro con José y con nadie más.
+ Bueno, esto que está acá es una clave primaria. Se llama así.
+ Se llama primary key.
+ Clave.
+ Me quedan dos conceptos. Clave primaria y clave foránea.
+ ¿Sí? Y yo los vimos, en realidad.
+ Foránea.
+ ¿Qué son?
+ En inglés. Primary key.
+ Y foreign key.
+ Foreign key. Que es clave foránea.
+ Que se refiere a algo que es externo.
+ Vieron que algo que es foráneo es externo.
+ Bueno, estos dos conceptos ya los vimos.
+ Ya los pusimos en práctica, pero no les pusimos nombre.
+ La columna ID en la tabla de alumno es una primary key.
+ Primary key. Al igual que docente, al igual que curso, al igual que descripción.
+ Esto es una primary key.
+ ¿Bien?
+ Pongámosle un color, por ejemplo, verde.
+ Así para que se note bien.
+ ¿Sí?
+ Este verde me está diciendo, este campo me permite identificar de forma única un registro de otro.
+ Ya estoy cerrando, gente. No me queda mucho más.
+ Esto me está diciendo soy un registro único dentro de una tabla.
+ Eso es una ID, es una primary key.
+ Una foreign key, una clave foránea, son, por ejemplo, estas dos que están acá.
+ Esta que está acá, perdón, que es docente.
+ Vamos a ponerlo en naranjita.
+ Y estas dos que están acá también.
+ ¿Sí?
+ ¿Qué es una clave foránea?
+ Es un campo que está viendo, que está referenciando a una paraimariquí.
+ Entonces, ¿qué es una clave primaria?
+ Es un identificador, identificador único dentro de una tabla.
+ ¿Para qué? Para poder hablar de forma unívoca un registro de otro.
+ Bueno, y la foreign key es un campo dentro de una tabla que referencia, o sea, que habla de otra cosa.
+ Referencia a una primary key.
+ Bueno, a una primary key, porque puede ser dentro de la misma tabla, no importa.
+ ¿Sí?
+ Entonces, la primary key es un identificador único.
+ Yo sé un registro dentro de otro porque tiene un ID, tiene un campo único.
+ La primary key.
+ La clave foránea está mirando, está referenciando a una clave primaria.
+ Entonces, cuando yo digo docente, no digo Carlos López, digo uno.
+ Bueno, este uno en realidad está mirando a alguien más.
+ Está referenciando a este ID.
+ Bueno, esto es una clave foránea.
+ Y acá en inscripción, que hicimos justamente esta combinación, tenemos dos claves foráneas.
+ La clave foránea de alumno y la clave foránea del curso.
+ Bien.
+ Entonces, este uno es este uno.
+ Y este uno de curso es este otro uno.
+ Bien.
+ Entonces, yo la información la tengo dispuesta de una forma compactada.
+ Cuando yo quiero levantar la información, vengo, digo, ¿cuál es el alumno uno?
+ Este.
+ ¿Cuál es el curso uno?
+ Este.
+ Bueno, este alumno se inscribió a este curso.
+ ¿Sí?
+ Entonces, con eso ya tenemos el concepto de clave primaria y clave foránea.
+ Gaby, la clave foránea tiene que denominarse igual que la clave primaria de la tabla a
+ la que referencio o se puede tener columnas distintas.
+ Bueno, más o menos.
+ Fijate que esto es un Excel en realidad.
+ No lo vimos a nivel técnico, a nivel código.
+ Cómo se hace no lo vimos.
+ Si te referís a eso.
+ Ya después veremos cómo se escribe la sintaxis para lograr esto.
+ Bien.
+ Conceptualmente, vos lo que estás conectando estás haciendo una relación en cierto punto
+ física entre este campo, esta columna, con esta tabla.
+ Bien.
+ Es entre, es entre, es entre campo realmente.
+ Este campo mira a este otro campo.
+ Cuando yo pongo un uno acá, estoy diciendo, es un uno de la tabla de docentes.
+ Este uno.
+ ¿Sí?
+ Cuando yo acá pongo alumno uno, estoy hablando de este uno.
+ ¿Sí?
+ La relación es en ese sentido.
+ Cómo se hace en código tiene más que ver con escribir ese cuelle.
+ Pero bueno, en la clase que viene lo vemos.
+ ¿Sí?
+ Si entendimos esto, entendimos la parte práctica de base de datos.
+ ¿Sí?
+ Cómo se definen las tablas y cómo se relacionan entre sí.
+ Nos falta hablar de un montón de cosas que en la clase que viene charlaremos.
+ Que tiene que ver con, por ejemplo, qué es un DBMS.
+ Y cómo uso un cliente para.
+ Voy a escribirlo acá.
+ Para.
+ Definir estructuras.
+ Definir estructuras.
+ Es.
+ Estructuras, o sea, las tablas.
+ Y para manipular la información.
+ Manipular.
+ Queriendo decir agregar datos nuevos.
+ Modificar.
+ Y borrar.
+ ¿Sí?
+ Y no menos importante, consultar.
+ Yo en base de datos hago tres cosas y luego todo desde el cliente.
+ Defino las tablas.
+ Manipulo datos.
+ Agregó, quitó y modificó.
+ Y los consulto.
+ Hago lo que se conoce como un query.
+ ¿Bien?
+ Esta parte es la que vamos a ver en la clase que viene.
+ Ya tenemos definidas las tablas y cómo se comportan entre ellas.
+ Y aprendimos también el concepto de clave primaria y clave foránea.
+ Si entendemos esto, entendemos en gran parte, al menos.
+ Cómo funcionan las bases de datos relacionales.
+ El DBMS es un concepto que se llama.
+ Es importante dentro del panorama que estamos hablando.
+ No nos va a cambiar mucho lo que hacemos.
+ Pero es importante saber distinguir uno de otro.
+ Saber distinguir el DBMS del cliente, principalmente.
+ Y yendo propiamente al cliente vamos a aprender cómo hacer todo esto desde código.
+ O sea con SQL.
+ ¿Sí?
+ Y ya veremos lo que es SQL.
+ Y ahora vamos a ver cómo se hace.
+ La clase que viene nos queda pasar esto a cosas más concretas.
+ Código y hacerlo en el PGAdmin.
+ Para la clase que viene yo les recomiendo que ya tengan instalado el Poggres.
+ Van a ver que las presentaciones están todas con MySQL.
+ MySQL es muy en embole porque tienen que tener un segundo programa que es el Samp configurado.
+ Con Poggres es como todo autodestatado.
+ Es como todo autodestatado.
+ Con Poggres es como todo autodestatado.
+ Está todo en el mismo lugar.
+ Entonces, ¿vieron cómo lo hice?
+ Buscan Poggres.
+ ¿Ven que es PostgreSQL?
+ Ojo con la propaganda esta que es todo chamuyo.
+ Vienen acá.
+ Si tienen Windows van a Windows.
+ Y se descargan el más nuevo.
+ O si quieren el más viejo también.
+ Y si lo tienen ya está.
+ Pero vienen acá y se descargan este.
+ Que es la versión de 64 bits.
+ La versión más nueva de Poggres.
+ Esto les trae todo.
+ Les trae el pgadmin y les trae la base de datos.
+ Cuando lo instalen les va a pedir una clave y un usuario.
+ Anótenselo.
+ Porque después se los va a pedir cuando se logueen.
+ No se lo olviden porque si no lo van a tener que renunciar les ven en embole.
+ Anótenselo.
+ Lo instalan y la clase que viene jugamos con el pgadmin.
+ Y hacemos unas tablas, hacemos unos inserts y unos queries.
+ Gustavo, decime.
+ Profes, entonces a lo que tenemos en el aula virtual.
+ En la primer clase.
+ El installer de MySQL.
+ Un installer de Word SQL.
+ Después hay uno que dice MongoDB.
+ A eso nos damos bolillas.
+ MongoDB no lo vamos a ver.
+ Y MySQL nosotros lo reemplazamos por Poggres.
+ Así que si, no le den bolillas.
+ Se lo dejamos.
+ Perfecto.
+ Exactamente.
+ Ahí está Rosalía.
+ Fíjate que es la que pasé ahí.
+ Y bueno, esto después.
+ La clase que viene retomamos para explicar el DBMs y un par de cosas más.
+ Pero fíjense que ya está todo lo que hemos visto hoy.
+ Un par de cosas más que no nos incumben.
+ Que ya después hablaremos en la clase que viene.
+ Y la clase que viene metemos un poquito de código.
+ Bien.
+ Ya hacemos código concreto SQL para lograr esto mismo.
+ Perdón.
+ Esto mismo.
+ Pero en una base de datos.
+ De verdad.
+ Y la vamos a manipular.
+ Bien. Y ya con eso el miércoles lo cerramos.
+ Y ya después el lunes que viene hacemos.
+ Ya empezamos con Python.
+ Recuerden que estamos pronto a la entrega.
+ El 29 de mayo es la entrega del frontend.
+ Así que esto atiéndanlo.
+ No descuiden el TP que estamos en las últimas instancias.
+ Nos quedan dos clases más la presentación.
+ Bien.
+ Si tienen dudas.
+ Avísenme por mail.
+ Ahora después reviso lo tuyo y edita a ver qué onda con ese...
+ Con ese visualcode medio raro.
+ Cesar, decime.
+ Sí, con respecto a la presentación tiene que ser cortita.
+ Tres, cuatro minutos.
+ Sí, ideal.
+ Sí, sí, sí, sí.
+ Después les comento.
+ Igual la clase que viene.
+ O sea, no la que viene.
+ El lunes la previa a la presentación les comento un poco cómo quiero que lo hagan.
+ No tiene mucho misterio.
+ No tiene mucho misterio.
+ Es simplemente recorrer el sitio.
+ O sea, verlo andando.
+ Ver responsividad.
+ Chequear, hacer unos checkpoints de las consignas más importantes.
+ Y ver el código.
+ Todos los muestran ustedes.
+ Uno de ustedes comparte pantalla y muestra todo.
+ O si quieren dos, pero no más.
+ Uno muestra el sitio y el otro muestra el código.
+ Bien.
+ Y ya con eso damos por cerrado el TP.
+ Si está todo en check, en ese mismo momento ya quedan aprobados.
+ Y listo.
+ Igual el lunes lo charlamos bien.
+ Pero es eso.
+ Ok.
+ Y sí, cuanto más corto mejor.
+ Cuatro minutos, cinco, ideal.
+ Porque somos unos cuantos.
+ Gente, una pregunta, comentario antes de irnos.
+ Bueno, cerramos acá.
+ Buena semana.
+ Nos vemos el miércoles.
+ Un saludo para todos.
+ Nos vemos.
+ Hasta el miércoles, profesor.
+ Adiós.
